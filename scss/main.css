@@ -1,0 +1,74 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95px;
+  border-bottom: 1px solid #ccffcc;
+}
+.header .nav__item_logo {
+  padding: 36px;
+  width: 64px;
+  height: 65px;
+  background: url("../img/header-clever.png") no-repeat;
+  background-size: contain;
+}
+.header .nav__item {
+  padding: 35px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header .nav__item:hover {
+  border-top: 3px solid #33cc33;
+  background: linear-gradient(to bottom, #eef9ee, #fff);
+}
+.header .header__button {
+  width: 243px;
+  height: 54px;
+  background: linear-gradient(to right, #33cc33, #99cc66);
+  border: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 20px 0 20px 0;
+}
+
+.contacts {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts .contacts__back {
+  width: 871px;
+  height: 878px;
+  background: url("../img/contacts-green.png") no-repeat;
+  background-size: contain;
+}
+.contacts .contacts__map {
+  width: 898px;
+  height: 744px;
+  background: url("../img/contacts-map.png") no-repeat;
+  background-size: contain;
+}
+.contacts .contacts__info {
+  position: absolute;
+}
+.contacts .contacts__info .data__address {
+  border: 2px solid red;
+}
+.contacts .contacts__info .data__address:before {
+  content: url("../img/contacts-address.png");
+}
+
+/*# sourceMappingURL=main.css.map */
