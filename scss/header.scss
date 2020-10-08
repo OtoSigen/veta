@@ -1,0 +1,33 @@
+.header {
+  // margin: 0 2% 0 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95px;
+  border-bottom: 1px solid #ccffcc;
+  .header__nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    .nav__item_logo {
+      // padding: 36px;
+      // margin: 0 2% 0 2%;
+      width: 64px;
+      height: 65px;
+      background: url("../img/header-clever.png") no-repeat;
+      background-size: contain;
+    }
+    .nav__item {
+      padding: 35px;
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover {
+        border-top: 3px solid #33cc33;
+        background: linear-gradient(to bottom, #eef9ee, #fff);
+      }
+    }
+  }
+}
