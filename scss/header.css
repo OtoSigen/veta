@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95px;
+  border-bottom: 1px solid #ccffcc;
+}
+.header .header__nav {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.header .header__nav .nav__item_logo {
+  width: 64px;
+  height: 65px;
+  background: url("../img/header-clever.png") no-repeat;
+  background-size: contain;
+}
+.header .header__nav .nav__item {
+  padding: 35px;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header .header__nav .nav__item:hover {
+  border-top: 3px solid #33cc33;
+  background: linear-gradient(to bottom, #eef9ee, #fff);
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -13,20 +13,46 @@
     width: 898px;
     height: 744px;
     background: url("../img/contacts-map.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   .contacts__info {
     position: absolute;
     max-width: 620px;
+    left: 15%;
+    top: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    .contacts__info-title {
+      font-size: 54px;
+      font-weight: 900;
+      margin: 0 0 50px 0;
+    }
+    .contacts__info-description {
+      font-size: 18px;
+      margin: 0 0 60px 0;
+    }
     .contacts__data {
       display: flex;
-      .data__address {
-        display: flex;
-        flex-flow: column;
+      .data {
         text-align: center;
         max-width: 180px;
+        margin: 0;
+      }
+      .address {
         &:before {
           content: url("../img/contacts-address.png");
+          margin-bottom: -50px;
+        }
+      }
+      .phone {
+        &:before {
+          content: url("../img/contacts-phone.png");
+          margin-bottom: -50px;
+        }
+      }
+      .email {
+        &:before {
+          content: url("../img/contacts-mail.png");
           margin-bottom: -50px;
         }
       }
@@ -43,13 +69,29 @@
   justify-content: center;
   .footer__nav {
     flex-wrap: nowrap;
-
     .footer__nav_item {
       text-decoration: none;
       color: #fff;
       font-size: 16px;
       margin: 0 70px 0 0;
       text-transform: uppercase;
+    }
+    .footer__nav_item-logo {
+      width: 65px;
+      height: 65px;
+      background: url("../img/footer-logo.png") no-repeat;
+      background-size: contain;
+      padding: 35px;
+      margin: 0 70px 0 0;
+    }
+
+    .footer__nav_inst {
+      background: url("../img/footer-instagram.png") no-repeat;
+      padding: 35px;
+    }
+    .footer__nav_telegram {
+      background: url("../img/footer-telegram.png") no-repeat;
+      padding: 35px;
     }
   }
 }
