@@ -1,3 +1,9 @@
+.back__img {
+  width: 80%;
+  background: url("../img/main-run.png") no-repeat;
+  background-size: contain;
+}
+
 .company {
   max-width: 100%;
   text-align: center;
@@ -25,7 +31,7 @@
     max-height: 705px;
     border-radius: 20px 20px 0 20px;
     border: 1px solid black;
-    margin: 58px 50px 50px 50px;
+    margin: 0 2% 2% 2%;
     .product__content {
       margin-top: 82px;
       display: flex;
