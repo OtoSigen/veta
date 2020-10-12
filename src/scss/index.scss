@@ -1,7 +1,15 @@
 .back__img {
-  width: 80%;
-  background: url("../img/main-run.png") no-repeat;
-  background-size: contain;
+  width: 100%;
+  height: auto;
+  @media (max-width: 1366px) {
+    width: 500px;
+  }
+  @media (max-width: 1024px) {
+    width: 350px;
+  }
+  @media (max-width: 320px) {
+    width: 200px;
+  }
 }
 
 .company {

@@ -1,11 +1,51 @@
-.button_green {
+.button {
   width: 243px;
   height: 54px;
-  background: linear-gradient(to right, #33cc33, #99cc66);
   border: none;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
-  border-radius: 20px 0 20px 0;
+  border-radius: 10px 0 10px 0;
+  outline: none;
+  cursor: pointer;
+  @media (max-width: 820px) {
+    width: 240px;
+
+    margin-bottom: 10px;
+  }
+  @media (max-width: 573px) {
+    width: 180px;
+  }
+  @media (max-width: 450px) {
+    width: 280px;
+  }
+}
+.green {
+  background: linear-gradient(to right, #33cc33, #99cc66);
+}
+.orange {
+  background-color: #ff9933;
+}
+.red {
+  background-color: #ff3333;
+  width: 150px;
+  @media (max-width: 820px) {
+    width: 240px;
+  }
+}
+.border_red {
+  background-color: #fff;
+  border: 1px solid #ff3333;
+  color: #ff3333;
+}
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcccc;
+  &:before {
+    content: url("../img/video-button.png");
+    margin-right: 10px;
+  }
 }
