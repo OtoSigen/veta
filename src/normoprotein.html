@@ -13,45 +13,37 @@
     <title>Фотодитагель</title>
   </head>
   <body>
-    <header class="header">
-  <button class="header__burger"></button>
-  <nav class="header__nav">
-    <a href="fotoditazin-gel.html" class="nav__item">Фотодитазин гель</a>
-    <a href="normoprotein.html" class="nav__item">Нормопротеин</a>
-    <a href="fotoditagel.html" class="nav__item">Фотодитагель</a>
-    <a href="index.html"
-      ><img class="nav__item_logo" alt="logo" src="./img/header-clever.png"
-    /></a>
-    <a href="saumal.html" class="nav__item">Саумал</a>
-    <a href="fotoditazin.html" class="nav__item">Фотодитазин</a>
-    <a href="contacts.html" class="nav__item">Контакты</a>
-  </nav>
-  <button class="button green button_green_margin-left">
-    Оставить заявку
-  </button>
-  <img class="header__phone" src="./img/header-phone.png" alt="phone" />
-</header>
-
+    @@include("_header.html")
     <section class="header__block-item">
-      <img class="back__left" src="./img/item-header-green.png" alt="img" />
+      <img
+        class="back__left"
+        src="./img/normoprotein-back-left.png"
+        alt="img"
+      />
       <img class="back__right" src="./img/item-header-gray.png" alt="img" />
       <div class="item__wrap">
-        <img
-          class="item__wrap_image"
-          src="./img/fotoditazin-gel.png"
-          alt="img"
-        />
+        <img class="item__wrap_image" src="./img/normoprotein.png" alt="img" />
         <div class="item__wrap_info">
           <p class="info__slogan">Всё лучшее для вас</p>
-          <h1 class="h1__title">Фотодитазин Гель</h1>
+          <h1 class="h1__title">Нормопротеин</h1>
           <div class="info__advantage">
-            <p class="advantage__item">Высокоусвояемые белки</p>
-            <p class="advantage__item">Пищевые волокна</p>
-            <p class="advantage__item">Витамины</p>
+            <p class="advantage__item_blue">
+              Высокоусвояемые белки
+            </p>
+            <p class="advantage__item_blue">Пищевые волокна</p>
+            <p class="advantage__item_blue">Витамины</p>
             <br />
-            <p class="advantage__item">Минеральные вещества</p>
-            <p class="advantage__item">Дигидрокверцетин</p>
-            <p class="advantage__item">Диетическое питание</p>
+            <p class="advantage__item_blue">
+              Минеральные вещества
+            </p>
+            <p class="advantage__item_blue">Дигидрокверцетин</p>
+            <p class="advantage__item_blue">
+              Диетическое питание
+            </p>
+          </div>
+          <div class="price">
+            <p class="price__item">1800</p>
+            <sup class="price__item_sup">&nbsp;2500&emsp;</sup>
           </div>
           <div class="item__wrap_button">
             <button class="button red">Купить</button>
@@ -92,7 +84,12 @@
       </div>
     </section>
     <section class="benefit">
-      <h2 class="h2__title">Польза Фотодитазин Геля</h2>
+      <img
+        class="back__middle"
+        src="./img/normoprotein-back-middle.png"
+        alt="img"
+      />
+      <h2 class="h2__title">Польза Нормопротеина</h2>
       <div class="benefit__wrap">
         <div class="benefit__item">
           <div class="benefit__item__img">
@@ -156,37 +153,13 @@
           <div class="image__back-color image__back-color_red"></div>
           <img
             class="image__item"
-            src="./img/fotoditazin-gel-foto1.png"
+            src="./img/normoprotein-foto1.png"
             alt="img"
           />
         </div>
         <div class="app__info">
           <p class="info__slogan">Всё лучшее для вас</p>
-          <h2 class="h2__title">Показания к применению</h2>
-          <p class="p__description">
-            В зависимости от требуемой консистенции каши 100-200 мл питьевой
-            воды или нежирного молока довести до кипения, добавить 25-30 г или 3
-            столовых ложки овсяных хлопьев (или другой крупы) и варить на
-            медленном огне. За 5-10 минут до окончания приготовления внести
-            восстановленную смесь «НОРМОПРОТЕИН», перемешать и продолжать варить
-            до готовности.
-          </p>
-        </div>
-      </div>
-      <div class="block__app">
-        <div class="app__image app__image_reverse">
-          <div
-            class="image__back-color image__back-color_lightgreen image__back-color_reverse"
-          ></div>
-          <img
-            class="image__item"
-            src="./img/fotoditazin-gel-foto2.png"
-            alt="img"
-          />
-        </div>
-        <div class="app__info app__info_reverse">
-          <p class="info__slogan">Всё лучшее для вас</p>
-          <h2 class="h2__title">Фармакологические свойства</h2>
+          <h2 class="h2__title">Способ применениям</h2>
           <p class="p__description">
             В зависимости от требуемой консистенции каши 100-200 мл питьевой
             воды или нежирного молока довести до кипения, добавить 25-30 г или 3
@@ -199,12 +172,16 @@
       </div>
     </section>
     <section class="buy-item">
-      <h2 class="h2__title">Купить Фотодитагель</h2>
+      <h2 class="h2__title">Купить Нормопротеин</h2>
       <p class="p__description">
         Вторым компонентом ФДТ является низкоэнергетическое световое излучение,
         длина волны которого соответствует пику поглощения данного
         фотосенсибилизатора.
       </p>
+      <div class="price">
+        <p class="price__item">1800</p>
+        <sup class="price__item_sup">&nbsp;2500&emsp;</sup>
+      </div>
       <div class="item__wrap_button">
         <button class="button red">Купить</button>
         <button class="button border_red">Купить на ozon</button>

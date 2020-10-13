@@ -64,7 +64,7 @@
   font-weight: 500;
   white-space: nowrap;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .header .header__nav .nav__item {
     font-size: 14px;
   }
