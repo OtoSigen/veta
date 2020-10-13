@@ -6,6 +6,7 @@
   align-items: center;
   background-color: #33cc33;
   height: auto;
+  margin-top: 10%;
 }
 .main__footer .form {
   z-index: 10;

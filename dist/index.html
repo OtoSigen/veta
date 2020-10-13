@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
     <title>Главная</title>
   </head>
   <body>
@@ -32,16 +30,16 @@
   <img class="header__phone" src="./img/header-phone.png" alt="phone" />
 </header>
 
-    <section class="contacts">
-      <img class="contacts__back" src="./img/contacts-green.png" alt="back" />
+    <section class="index">
+      <img class="index__back" src="./img/contacts-green.png" alt="back" />
       <img src="./img/main-run.png" class="back__img" alt="img" />
-      <div class="contacts__info">
-        <h1 class="contacts__info-title">Препараты, которые работают</h1>
-        <p class="contacts__info-description">
+      <div class="index__info">
+        <h1 class="index__info-title">Препараты, которые работают</h1>
+        <p class="index__info-description">
           Одним компонентом является вещество, взаимодействующее со светом волны
           и обладающее способностью накаливаться.
         </p>
-        <button class="button green">Оставить заявку</button>
+        <button class="button green shadow">Оставить заявку</button>
       </div>
     </section>
     <section class="company">
@@ -53,8 +51,8 @@
         универсальные или специализированные лазеры. Под влиянием светового
         излучения в тканях организма развивается фотохимическая реакция.
       </p>
-      <h2 class="h2__title">Наши продукты</h2>
       <div class="product">
+        <h2 class="h2__title">Наши продукты</h2>
         <div class="product__wrap">
           <div class="product__content">
             <img src="./img/saumal.png" alt="" class="product__img" />
@@ -65,8 +63,7 @@
             </p>
             <button class="button green button_green_product">Подробнее</button>
           </div>
-        </div>
-        <div class="product__wrap">
+
           <div class="product__content">
             <img src="./img/fotoditazin.png" alt="" class="product__img" />
             <h3 class="h3__title">Фотодитазин</h3>
@@ -76,8 +73,7 @@
             </p>
             <button class="button green">Подробнее</button>
           </div>
-        </div>
-        <div class="product__wrap">
+
           <div class="product__content">
             <img src="./img/normoprotein.png" alt="" class="product__img" />
             <h3 class="h3__title">Нормопротеин</h3>
@@ -87,10 +83,13 @@
             </p>
             <button class="button green">Подробнее</button>
           </div>
-        </div>
-        <div class="product__wrap">
+
           <div class="product__content">
-            <img src="./img/fotoditagel.png" alt="" class="product__img" />
+            <img
+              src="./img/fotoditagel.png"
+              alt=""
+              class="product__img product__img_width"
+            />
             <h3 class="h3__title">Фотодитагель</h3>
             <p class="product__description">
               Белки кобыльего молока легко усваиваются. В нем содержатся около
@@ -98,10 +97,13 @@
             </p>
             <button class="button green">Подробнее</button>
           </div>
-        </div>
-        <div class="product__wrap">
+
           <div class="product__content">
-            <img src="./img/fotoditazin-gel.png" alt="" class="product__img" />
+            <img
+              src="./img/fotoditazin-gel.png"
+              alt=""
+              class="product__img product__img_width"
+            />
             <h3 class="h3__title">Фотодитазин Гель</h3>
             <p class="product__description">
               Белки кобыльего молока легко усваиваются. В нем содержатся около
@@ -113,44 +115,44 @@
       </div>
     </section>
     <div class="main__footer">
-      <form class="form">
+    <form class="form">
         <p class="form__slogan">Всё лучшее для вас</p>
         <h2 class="h2__title">Оставьте заявку прямо сейчас!</h2>
         <p class="p__description">
-          Вторым компонентом ФДТ является низкоэнергетическое световое
-          излучение, длина волны которого соответствует пику поглощения данного
-          фотосенсибилизатора.
+            Вторым компонентом ФДТ является низкоэнергетическое световое
+            излучение, длина волны которого соответствует пику поглощения данного
+            фотосенсибилизатора.
         </p>
         <div class="form__input">
-          <input
-            class="input"
-            type="text"
-            placeholder="Ваш номер телефона или e-mail"
-          />
-          <button class="button orange">Оставить заявку</button>
+            <input
+                    class="input"
+                    type="text"
+                    placeholder="Ваш номер телефона или e-mail"
+            />
+            <button class="button orange">Оставить заявку</button>
         </div>
-      </form>
-      <footer class="footer footer__back_none">
+    </form>
+    <footer class="footer footer__back_none">
         <nav class="footer__nav">
-          <a href="#" class="footer__nav_item">Саумал</a>
-          <a href="#" class="footer__nav_item">Фотодитазин</a>
-          <a href="#" class="footer__nav_item">Нормопротеин</a>
-          <a href="#" class="footer__nav_item-logo"></a>
-          <a href="#" class="footer__nav_item">Фотодитагель</a>
-          <a href="#" class="footer__nav_item">Контакты</a>
-          <div class="footer__social">
-            <a href="#" class="footer__nav_inst"></a>
-            <a href="#" class="footer__nav_telegram"></a>
-          </div>
+            <a href="#" class="footer__nav_item">Саумал</a>
+            <a href="#" class="footer__nav_item">Фотодитазин</a>
+            <a href="#" class="footer__nav_item">Нормопротеин</a>
+            <a href="#" class="footer__nav_item-logo"></a>
+            <a href="#" class="footer__nav_item">Фотодитагель</a>
+            <a href="#" class="footer__nav_item">Контакты</a>
+            <div class="footer__social">
+                <a href="#" class="footer__nav_inst"></a>
+                <a href="#" class="footer__nav_telegram"></a>
+            </div>
         </nav>
-      </footer>
-      <!--      <img-->
-      <!--        class="form__img"-->
-      <!--        src="./img/form-green.png"-->
-      <!--        alt="img"-->
-      <!--        style="order: 2;"-->
-      <!--      />-->
-    </div>
+    </footer>
+    <!--      <img-->
+    <!--        class="form__img"-->
+    <!--        src="./img/form-green.png"-->
+    <!--        alt="img"-->
+    <!--        style="order: 2;"-->
+    <!--      />-->
+</div>
 
     <script src="./js/script.min.js"></script>
   </body>

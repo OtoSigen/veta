@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 7%;
   .back__left {
     width: 868px;
     height: auto;
@@ -189,7 +189,7 @@
   align-items: flex-start;
   padding: 0 10% 0 10%;
   max-width: 1280px;
-
+  margin-bottom: 7%;
   @media (max-width: 850px) {
     flex-flow: column;
   }
@@ -233,6 +233,7 @@
 }
 .item__composition {
   z-index: 10;
+  margin-bottom: 7%;
   .h2__title {
     font-size: 44px;
     font-weight: 900;
@@ -370,7 +371,7 @@
 }
 .app {
   z-index: 10;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   @media (max-width: 768px) {
     margin-top: 350px;
   }
@@ -542,5 +543,13 @@
   }
   .price__item_sup-orange {
     text-decoration-color: #cc6600;
+  }
+}
+.margin {
+  @media (max-width: 480px) {
+    top: 350px;
+  }
+  @media (max-width: 380px) {
+    top: 370px;
   }
 }

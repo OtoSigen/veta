@@ -1,21 +1,32 @@
 .contacts {
   position: relative;
-  height: auto;
+  height: 750px;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1366px) {
+  .contacts {
+    height: 600px;
+  }
+}
+@media (max-width: 1024px) {
+  .contacts {
+    height: 450px;
+  }
+}
 @media (max-width: 480px) {
   .contacts {
-    flex-flow: column;
+    height: 600px;
   }
 }
 .contacts .contacts__back {
-  width: 671px;
+  position: absolute;
+  width: 600px;
   height: auto;
 }
 @media (max-width: 1366px) {
   .contacts .contacts__back {
-    width: 500px;
+    width: 470px;
   }
 }
 @media (max-width: 1024px) {
@@ -29,19 +40,24 @@
   }
 }
 .contacts .contacts__map {
-  width: 898px;
+  position: absolute;
+  width: 820px;
   height: auto;
-  background-position: right;
-  background-size: cover;
+  right: 0;
 }
 @media (max-width: 1366px) {
   .contacts .contacts__map {
-    width: 750px;
+    width: 630px;
   }
 }
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
   .contacts .contacts__map {
     width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .contacts .contacts__map {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -50,12 +66,24 @@
   }
 }
 .contacts .contacts__info {
-  position: absolute;
+  position: relative;
   max-width: 620px;
   left: 10%;
   top: 20%;
   display: flex;
   flex-flow: column nowrap;
+}
+@media (max-width: 768px) {
+  .contacts .contacts__info {
+    left: 0;
+    top: 7%;
+    padding: 0 7% 0 7%;
+  }
+}
+@media (max-width: 640px) {
+  .contacts .contacts__info {
+    width: 450px;
+  }
 }
 .contacts .contacts__info .contacts__info-title {
   font-size: 54px;
@@ -84,16 +112,25 @@
     flex-flow: column;
   }
 }
+.contacts .contacts__info .contacts__data .data__item {
+  width: 210px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 600;
+}
 @media (max-width: 480px) {
   .contacts .contacts__info .contacts__data .data__item {
     display: flex;
     flex-flow: row;
+    margin-bottom: 5%;
   }
 }
-.contacts .contacts__info .contacts__data .data__item .data .address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contacts .contacts__info .contacts__data .data__item .item__img {
+  width: 65px;
+  height: 80px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+  border-radius: 0 20px 0 20px;
+  margin-right: 3%;
 }
 
 /*# sourceMappingURL=contacts.css.map */

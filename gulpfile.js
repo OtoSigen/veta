@@ -40,8 +40,9 @@ let { src, dest } = require("gulp"),
   imagemin = require("gulp-imagemin"),
   webp = require("gulp-webp"),
   webphtml = require("gulp-webp-html"),
-  webpcss = require("gulp-webp-css");
-// webp_converter = require("webp-converter");
+  webpcss = require("gulp-webp-css"),
+  // webp_converter = require("webp-converter");
+  ghPages = require("gulp-gh-pages");
 
 function browserSync(params) {
   browsersync.init({
@@ -134,6 +135,10 @@ function watchFiles(params) {
 function clean(params) {
   return del(path.clean);
 }
+
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
 
 let build = gulp.series(clean, gulp.parallel(js, css, html, images));
 let watch = gulp.parallel(build, watchFiles, browserSync);
