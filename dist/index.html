@@ -29,6 +29,29 @@
   </button>
   <img class="header__phone" src="./img/header-phone.png" alt="phone" />
 </header>
+ <section class="container">
+  <div class="fixed_overlay hide">
+    <div class="popup">
+      <h2 class="popup__title">Оставить заявку</h2>
+      <form class="popup__form">
+        <div class="form__content">
+          <input class="form__input" type="text" placeholder="Имя" />
+          <input class="form__input" type="text" placeholder="Телефон" />
+        </div>
+        <input class="form__input" type="text" placeholder="E-mail" />
+        <input class="form__input" type="text" placeholder="Комментарий" />
+        <div>
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox"
+            >Я согласен (на) с обработкой Персональных данных</label
+          >
+        </div>
+        <button class="button green">Оставить заявку</button>
+      </form>
+      <img class="popup__img" src="img/popup-back.png" alt="img" />
+    </div>
+  </div>
+</section>
 
     <section class="index">
       <img class="index__back" src="./img/contacts-green.png" alt="back" />
@@ -115,44 +138,39 @@
       </div>
     </section>
     <div class="main__footer">
-    <form class="form">
-        <p class="form__slogan">Всё лучшее для вас</p>
-        <h2 class="h2__title">Оставьте заявку прямо сейчас!</h2>
-        <p class="p__description">
-            Вторым компонентом ФДТ является низкоэнергетическое световое
-            излучение, длина волны которого соответствует пику поглощения данного
-            фотосенсибилизатора.
-        </p>
-        <div class="form__input">
-            <input
-                    class="input"
-                    type="text"
-                    placeholder="Ваш номер телефона или e-mail"
-            />
-            <button class="button orange">Оставить заявку</button>
-        </div>
-    </form>
-    <footer class="footer footer__back_none">
-        <nav class="footer__nav">
-            <a href="#" class="footer__nav_item">Саумал</a>
-            <a href="#" class="footer__nav_item">Фотодитазин</a>
-            <a href="#" class="footer__nav_item">Нормопротеин</a>
-            <a href="#" class="footer__nav_item-logo"></a>
-            <a href="#" class="footer__nav_item">Фотодитагель</a>
-            <a href="#" class="footer__nav_item">Контакты</a>
-            <div class="footer__social">
-                <a href="#" class="footer__nav_inst"></a>
-                <a href="#" class="footer__nav_telegram"></a>
-            </div>
-        </nav>
-    </footer>
-    <!--      <img-->
-    <!--        class="form__img"-->
-    <!--        src="./img/form-green.png"-->
-    <!--        alt="img"-->
-    <!--        style="order: 2;"-->
-    <!--      />-->
+  <form class="form">
+    <p class="form__slogan">Всё лучшее для вас</p>
+    <h2 class="h2__title">Оставьте заявку прямо сейчас!</h2>
+    <p class="p__description">
+      Вторым компонентом ФДТ является низкоэнергетическое световое излучение,
+      длина волны которого соответствует пику поглощения данного
+      фотосенсибилизатора.
+    </p>
+    <div class="form__input">
+      <input
+        class="input"
+        type="text"
+        placeholder="Ваш номер телефона или e-mail"
+      />
+      <button class="button orange">Оставить заявку</button>
+    </div>
+  </form>
+  <footer class="footer footer__back_none">
+    <nav class="footer__nav">
+      <a href="#" class="footer__nav_item">Саумал</a>
+      <a href="#" class="footer__nav_item">Фотодитазин</a>
+      <a href="#" class="footer__nav_item">Нормопротеин</a>
+      <a href="#" class="footer__nav_item-logo"></a>
+      <a href="#" class="footer__nav_item">Фотодитагель</a>
+      <a href="#" class="footer__nav_item">Контакты</a>
+      <div class="footer__social">
+        <a href="#" class="footer__nav_inst"></a>
+        <a href="#" class="footer__nav_telegram"></a>
+      </div>
+    </nav>
+  </footer>
 </div>
+
 
     <script src="./js/script.min.js"></script>
   </body>

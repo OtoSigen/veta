@@ -972,6 +972,100 @@
           text-decoration-color: #cc6600;
 }
 
+.container .fixed_overlay {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 20;
+}
+
+.container .fixed_overlay .popup {
+  position: relative;
+  max-width: 890px;
+  width: 100%;
+  height: 560px;
+  background-color: #fff;
+  padding: 5% 5% 0 5%;
+  margin: 2% 2% 2% 2%;
+  border-radius: 75px 0 75px 0;
+}
+
+.container .fixed_overlay .popup .popup__img {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+.container .fixed_overlay .popup .popup__title {
+  z-index: 10;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0 0 4%;
+}
+
+.container .fixed_overlay .popup .popup__form {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.container .fixed_overlay .popup .popup__form .form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+}
+
+.container .hide {
+  display: none;
+}
+
+.container .show {
+  display: block;
+}
+
+.form__input {
+  z-index: 10;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2%;
+  background-color: transparent;
+}
+
+.form__input:focus {
+  border-bottom: 2px solid #33cc33;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
