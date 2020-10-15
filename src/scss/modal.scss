@@ -1,4 +1,6 @@
 .container {
+  width: 100%;
+  height: auto;
   .fixed_overlay {
     position: fixed;
     overflow: auto;
@@ -18,21 +20,24 @@
       height: 560px;
       background-color: #fff;
       padding: 5% 5% 0 5%;
-      margin: 2% 2% 2% 2%;
+      margin: 2% auto 2% auto;
       border-radius: 75px 0 75px 0;
+      .popup__title {
+        position: relative;
+        z-index: 20;
+        font-size: 36px;
+        font-weight: 900;
+        margin: 0 0 4%;
+      }
       .popup__img {
         position: absolute;
         padding: 0;
         margin: 0;
         left: 0;
         top: 0;
+        z-index: 1;
       }
-      .popup__title {
-        z-index: 10;
-        font-size: 36px;
-        font-weight: 900;
-        margin: 0 0 4%;
-      }
+
       .popup__form {
         z-index: 10;
         display: flex;
@@ -43,6 +48,10 @@
           display: flex;
           flex-flow: row nowrap;
           width: 100%;
+          justify-content: space-between;
+          .form__input_width {
+            width: 49%;
+          }
         }
       }
     }
@@ -65,4 +74,10 @@
   &:focus {
     border-bottom: 2px solid #33cc33;
   }
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
 }

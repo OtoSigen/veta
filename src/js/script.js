@@ -15,10 +15,11 @@ testWebP(function (support) {
   }
 });
 
-popupBooked = () => {
-  const popup = document.getElementById("popup_overlay-booked");
-  const popupCloseBtn = document.getElementById("btn_close");
-  const popupOpenBtn = document.querySelectorAll(".uslugi_btn");
+const popupBooked = () => {
+  const popup = document.querySelector('#popup');
+ // const popupCloseBtn = document.getElementById("btn_close");
+  const popupOpenBtn = document.querySelectorAll(".popup-open");
+  console.log(popup)
 
   popupOpenBtn.forEach(function (item) {
     item.addEventListener("click", function () {
@@ -27,26 +28,26 @@ popupBooked = () => {
     });
   });
 
-  popupCloseBtn.addEventListener("click", function () {
-    popup.classList.add("hide");
-    popup.classList.remove("show");
-  });
+  // popupCloseBtn.addEventListener("click", function () {
+  //   popup.classList.add("hide");
+  //   popup.classList.remove("show");
+  // });
 };
 popupBooked();
 
-popupReviews = () => {
-  const popupReviews = document.getElementById("fixed_overlay-reviews");
-  const popupCloseBtn = document.getElementById("btn_close");
-  const popupOpenBtnReviews = document.getElementById("popup_open-reviews");
+// popupReviews = () => {
+//   const popupReviews = document.getElementById("fixed_overlay-reviews");
+//   const popupCloseBtn = document.getElementById("btn_close");
+//   const popupOpenBtnReviews = document.getElementById("popup_open-reviews");
 
-  popupOpenBtnReviews.addEventListener("click", function () {
-    popupReviews.classList.add("show");
-    popupReviews.classList.remove("hide");
-  });
+//   popupOpenBtnReviews.addEventListener("click", function () {
+//     popupReviews.classList.add("show");
+//     popupReviews.classList.remove("hide");
+//   });
 
-  popupCloseBtn.addEventListener("click", function () {
-    popupReviews.classList.add("hide");
-    popupReviews.classList.remove("show");
-  });
-};
-popupReviews();
+//   popupCloseBtn.addEventListener("click", function () {
+//     popupReviews.classList.add("hide");
+//     popupReviews.classList.remove("show");
+//   });
+// };
+// popupReviews();
