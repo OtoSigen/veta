@@ -1,3 +1,8 @@
+.container {
+  width: 100%;
+  display: flex;
+  height: auto;
+}
 .container .fixed_overlay {
   position: fixed;
   overflow: auto;
@@ -15,24 +20,59 @@
   position: relative;
   max-width: 890px;
   width: 100%;
-  height: 560px;
+  height: auto;
   background-color: #fff;
-  padding: 5% 5% 0 5%;
-  margin: 2% 2% 2% 2%;
+  padding: 7%;
+  margin: 7%;
   border-radius: 75px 0 75px 0;
+}
+@media (max-width: 1024px) {
+  .container .fixed_overlay .popup {
+    max-width: 590px;
+  }
+}
+.container .fixed_overlay .popup .popup__close-btn {
+  width: 26px;
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+  z-index: 20;
+}
+.container .fixed_overlay .popup .popup__title {
+  position: relative;
+  z-index: 20;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 3% 0 4%;
+}
+@media (max-width: 1024px) {
+  .container .fixed_overlay .popup .popup__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .container .fixed_overlay .popup .popup__title {
+    font-size: 26px;
+  }
 }
 .container .fixed_overlay .popup .popup__img {
   position: absolute;
+  height: auto;
   padding: 0;
   margin: 0;
   left: 0;
   top: 0;
+  z-index: 1;
 }
-.container .fixed_overlay .popup .popup__title {
-  z-index: 10;
-  font-size: 36px;
-  font-weight: 900;
-  margin: 0 0 4%;
+@media (max-width: 1024px) {
+  .container .fixed_overlay .popup .popup__img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .container .fixed_overlay .popup .popup__img {
+    max-width: 310px;
+  }
 }
 .container .fixed_overlay .popup .popup__form {
   z-index: 10;
@@ -45,15 +85,37 @@
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .container .fixed_overlay .popup .popup__form .form__content {
+    flex-flow: column;
+  }
+}
+.container .fixed_overlay .popup .popup__form .form__content .form__input_width {
+  width: 49%;
+}
+@media (max-width: 768px) {
+  .container .fixed_overlay .popup .popup__form .form__content .form__input_width {
+    width: 100%;
+  }
+}
+.container .fixed_overlay .popup .popup__form .form__checkbox {
+  margin: 3% 0 5% 0;
+}
+.container .fixed_overlay .popup .popup__form .popup__btn-post {
+  align-self: flex-end;
 }
 .container .hide {
   display: none;
 }
 .container .show {
-  display: block;
+  display: flex;
 }
 
 .form__input {
+  font-weight: 500;
+  font-size: 16px;
   z-index: 10;
   height: 60px;
   border: none;
@@ -64,6 +126,14 @@
 }
 .form__input:focus {
   border-bottom: 2px solid #33cc33;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 /*# sourceMappingURL=modal.css.map */

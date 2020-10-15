@@ -4,20 +4,16 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-color: #33cc33;
   height: auto;
   margin-top: 10%;
   .form {
     z-index: 10;
-    //margin-top: 187px;
     max-width: 880px;
     width: 100%;
     display: flex;
     flex-flow: column;
-    //position: absolute;
     align-items: center;
     text-align: center;
-    //margin: 0 2% 0 2%;
     .form__slogan {
       color: #fff;
       font-size: 20px;
@@ -66,10 +62,18 @@
 }
 
 .form__img {
-  width: 1920px;
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
   height: auto;
   z-index: 1;
   @media (max-width: 1366px) {
-    width: 1643px;
+    max-width: 1366px;
+    width: 100%;
+    height: 1050px;
+  }
+  @media (max-width: 850px) {
+    //width: 1643px;
+    height: 1215px;
   }
 }

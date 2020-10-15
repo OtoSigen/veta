@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  display: flex;
   height: auto;
   .fixed_overlay {
     position: fixed;
@@ -17,25 +18,48 @@
       position: relative;
       max-width: 890px;
       width: 100%;
-      height: 560px;
+      height: auto;
       background-color: #fff;
-      padding: 5% 5% 0 5%;
-      margin: 2% auto 2% auto;
+      padding: 7%;
+      margin: 7%;
       border-radius: 75px 0 75px 0;
+      @media (max-width: 1024px) {
+        max-width: 590px;
+      }
+      .popup__close-btn {
+        width: 26px;
+        position: absolute;
+        right: 10%;
+        cursor: pointer;
+        z-index: 20;
+      }
       .popup__title {
         position: relative;
         z-index: 20;
         font-size: 36px;
         font-weight: 900;
-        margin: 0 0 4%;
+        margin: 3% 0 4%;
+        @media (max-width: 1024px) {
+          font-size: 32px;
+        }
+        @media (max-width: 480px) {
+          font-size: 26px;
+        }
       }
       .popup__img {
         position: absolute;
+        height: auto;
         padding: 0;
         margin: 0;
         left: 0;
         top: 0;
         z-index: 1;
+        @media (max-width: 1024px) {
+          max-width: 400px;
+        }
+        @media (max-width: 480px) {
+          max-width: 310px;
+        }
       }
 
       .popup__form {
@@ -44,14 +68,30 @@
         flex-flow: column nowrap;
         justify-content: space-between;
         width: 100%;
+
         .form__content {
           display: flex;
           flex-flow: row nowrap;
           width: 100%;
           justify-content: space-between;
+          @media (max-width: 768px) {
+            flex-flow: column;
+          }
           .form__input_width {
             width: 49%;
+            @media (max-width: 768px) {
+              width: 100%;
+            }
           }
+        }
+        .form__checkbox {
+          margin: 3% 0 5% 0;
+          //.custom__checkbox {
+          //  border: 2px solid #33cc33;
+          //}
+        }
+        .popup__btn-post {
+          align-self: flex-end;
         }
       }
     }
@@ -60,10 +100,12 @@
     display: none;
   }
   .show {
-    display: block;
+    display: flex;
   }
 }
 .form__input {
+  font-weight: 500;
+  font-size: 16px;
   z-index: 10;
   height: 60px;
   border: none;

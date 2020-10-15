@@ -75,6 +75,7 @@
 
 .footer__back_none {
   background: transparent;
+  margin-bottom: -500px;
 }
 
 /*# sourceMappingURL=down-menu-contacts.css.map */

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <header class="header">
+  <button class="header__burger"></button>
+  <nav class="header__nav">
+    <a href="fotoditazin-gel.html" class="nav__item">Фотодитазин гель</a>
+    <a href="normoprotein.html" class="nav__item">Нормопротеин</a>
+    <a href="fotoditagel.html" class="nav__item">Фотодитагель</a>
+    <a href="index.html"
+      ><img class="nav__item_logo" alt="logo" src="./img/header-clever.png"
+    /></a>
+    <a href="saumal.html" class="nav__item">Саумал</a>
+    <a href="fotoditazin.html" class="nav__item">Фотодитазин</a>
+    <a href="contacts.html" class="nav__item">Контакты</a>
+  </nav>
+  <button class="button green button_green_margin-left popup-open">
+    Оставить заявку
+  </button>
+  <img class="header__phone popup-open" src="./img/header-phone.png" alt="phone" />
+</header>
+<section class="container">
+  <div class="fixed_overlay hide" id="popup">
+    <div class="popup">
+      <img
+        class="popup__close-btn"
+        id="popup__close-btn"
+        src="./img/close-btn.png"
+        alt="img"
+      />
+      <h2 class="popup__title">Оставить заявку</h2>
+      <form class="popup__form">
+        <div class="form__content">
+          <input
+            class="form__input form__input_width"
+            type="text"
+            placeholder="Имя *"
+          />
+          <input
+            class="form__input form__input_width"
+            type="text"
+            placeholder="Телефон *"
+          />
+        </div>
+        <input class="form__input" type="text" placeholder="E-mail *" />
+        <input class="form__input" type="text" placeholder="Комментарий" />
+        <div class="form__checkbox">
+          <input class="custom__checkbox" id="checkbox" type="checkbox" />
+          <label for="checkbox"
+            >Я согласен (на) с обработкой Персональных данных</label
+          >
+        </div>
+        <button class="button green popup__btn-post">Оставить заявку</button>
+      </form>
+      <img class="popup__img" src="img/popup-back.png" alt="img" />
+    </div>
+  </div>
+</section>
+
+    <section class="contacts">
+      <img class="contacts__back" src="./img/contacts-green.png" alt="back" />
+      <img class="contacts__map" alt="map" src="./img/contacts-map.png" />
+      <div class="contacts__info">
+        <h1 class="contacts__info-title">Как нас найти?</h1>
+        <p class="contacts__info-description">
+          Одним компонентом является вещество, взаимодействующее со светом волны
+          и обладающее способностью накаливаться.
+        </p>
+        <div class="contacts__data">
+          <div class="data__item">
+            <img
+              class="item__img"
+              src="./img/contacts-address.png"
+              alt="icon"
+            />
+            <p class="data address">
+              Замоскворечье,<br />
+              ул. Валовая, д. 2 стр. 2
+            </p>
+          </div>
+          <div class="data__item">
+            <img class="item__img" src="./img/contacts-phone.png" alt="icon" />
+            <p class="data phone">
+              +70 55 256 02 10<br />
+              +70 55 256 02 20
+            </p>
+          </div>
+          <div class="data__item">
+            <img class="item__img" src="./img/contacts-mail.png" alt="icon" />
+            <p class="data email">fpk.info@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+  <nav class="footer__nav">
+    <a href="saumal.html" class="footer__nav_item">Саумал</a>
+    <a href="fotoditazin.html" class="footer__nav_item">Фотодитазин</a>
+    <a href="normoprotein.html" class="footer__nav_item">Нормопротеин</a>
+    <a href="index.html" class="footer__nav_item-logo"></a>
+    <a href="fotoditagel.html" class="footer__nav_item">Фотодитагель</a>
+    <a href="contacts.html" class="footer__nav_item">Контакты</a>
+    <div class="footer__social">
+      <a href="#" class="footer__nav_inst"></a>
+      <a href="#" class="footer__nav_telegram"></a>
+    </div>
+  </nav>
+</footer>
+
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>
