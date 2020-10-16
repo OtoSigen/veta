@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 20;
+  z-index: 120;
 }
 .container .fixed_overlay .popup {
   position: relative;

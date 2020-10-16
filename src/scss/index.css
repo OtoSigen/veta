@@ -149,8 +149,10 @@
   flex-flow: row wrap;
   padding: 0 5% 0 5%;
   margin-bottom: 5%;
+  z-index: 100;
 }
 .product .product__wrap .product__content {
+  box-sizing: border-box;
   max-height: 700px;
   display: flex;
   flex-flow: column;
@@ -161,6 +163,7 @@
   border-radius: 20px 20px 0 20px;
   margin: 0 2% 10% 2%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
 }
 @media (max-width: 1305px) {
   .product .product__wrap .product__content {
@@ -170,6 +173,7 @@
 @media (max-width: 480px) {
   .product .product__wrap .product__content {
     height: 434px;
+    padding: 5%;
   }
 }
 .product .product__wrap .product__content .product__img {
@@ -186,6 +190,7 @@
 .product .product__wrap .product__content .h3__title {
   font-size: 32px;
   font-weight: 900;
+  margin: 2% 0 2% 0;
 }
 .product .product__wrap .product__content .product__description {
   font-size: 16px;

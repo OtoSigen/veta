@@ -6,7 +6,7 @@
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  border-radius: 10px 0 10px 0;
+  border-radius: 20px 0 20px 0;
   outline: none;
   cursor: pointer;
   @media (max-width: 975px) {
@@ -30,6 +30,17 @@
   background-color: #ff9933;
   @media (max-width: 900px) {
     height: 54px;
+    @media (max-width: 574px) {
+      width: 280px;
+    }
+  }
+}
+.gray {
+  background-color: #f1f6ec;
+  color: #53bf60;
+  &:hover {
+    background: linear-gradient(to right, #33cc33, #99cc66);
+    color: #fff;
   }
 }
 .shadow {

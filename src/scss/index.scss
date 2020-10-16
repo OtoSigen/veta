@@ -117,7 +117,9 @@
     flex-flow: row wrap;
     padding: 0 5% 0 5%;
     margin-bottom: 5%;
+    z-index: 100;
     .product__content {
+      box-sizing: border-box;
       max-height: 700px;
       display: flex;
       flex-flow: column;
@@ -129,11 +131,13 @@
       margin: 0 2% 10% 2%;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
+      background-color: #fff;
       @media (max-width: 1305px) {
         max-width: 500px;
       }
       @media (max-width: 480px) {
         height: 434px;
+        padding: 5%;
       }
 
       .product__img {
@@ -148,6 +152,7 @@
       .h3__title {
         font-size: 32px;
         font-weight: 900;
+        margin: 2% 0 2% 0;
       }
       .product__description {
         font-size: 16px;
