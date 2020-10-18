@@ -11,11 +11,18 @@
     <title>Главная</title>
   </head>
   <body>
-    @@include('_header.html')
-    @@include('modal.html')@@include('_mobile-menu.html')
+    @@include('_header.html') @@include('_mobile-menu.html')
     <section class="index">
       <img class="index__back" src="./img/contacts-green.png" alt="back" />
-      <img src="./img/main-run.png" class="back__img" alt="img" />
+      <picture class="back__img">
+        <source
+          srcset="./img/main-run-mobile.png"
+          media="(max-width: 1024px)"
+        />
+        <source srcset="./img/main-run.png" media="(min-width: 1024px)" />
+        <img src="./img/main-run.png" class="back__img" alt="img" />
+      </picture>
+
       <div class="index__info">
         <h1 class="index__info-title">Препараты, которые работают</h1>
         <p class="index__info-description">
@@ -141,7 +148,7 @@
         </nav>
       </footer>
     </div>
-
+    @@include('_modal.html')
     <script src="./js/script.min.js"></script>
   </body>
 </html>

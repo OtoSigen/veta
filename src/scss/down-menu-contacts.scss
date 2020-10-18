@@ -43,6 +43,10 @@
         margin: 20px 0 20px 0;
       }
     }
+    .footer__nav_item-logo-gray {
+      background: url("../img/footer-logo-gray.png") no-repeat;
+      opacity: 0.3;
+    }
     .footer__social {
       display: flex;
       align-items: center;
@@ -56,10 +60,18 @@
         height: 30px;
         background: url("../img/footer-instagram.png") no-repeat;
       }
+      .footer__nav_inst-gray {
+        background: url("../img/footer-instagram-gray.png") no-repeat;
+        opacity: 0.3;
+      }
       .footer__nav_telegram {
         width: 30px;
         height: 30px;
         background: url("../img/footer-telegram.png") no-repeat;
+      }
+      .footer__nav_telegram-gray {
+        background: url("../img/footer-telegram-gray.png") no-repeat;
+        opacity: 0.3;
       }
     }
   }

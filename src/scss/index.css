@@ -29,6 +29,7 @@
   height: auto;
   position: absolute;
   right: 0;
+  z-index: 0;
 }
 @media (max-width: 1366px) {
   .index .back__img {
@@ -38,19 +39,19 @@
 @media (max-width: 1024px) {
   .index .back__img {
     width: 350px;
-    top: 40%;
+    top: 18%;
   }
 }
 @media (max-width: 768px) {
   .index .back__img {
     width: 310px;
-    top: 50%;
+    top: 33%;
   }
 }
 @media (max-width: 480px) {
   .index .back__img {
     width: 270px;
-    top: 70%;
+    top: 45%;
   }
 }
 .index .index__info {
@@ -100,6 +101,7 @@
 }
 
 .company {
+  z-index: 50;
   max-width: 100%;
   text-align: center;
   margin: auto;
@@ -119,7 +121,7 @@
 }
 @media (max-width: 480px) {
   .company {
-    margin-top: 160px;
+    margin-top: 220px;
   }
 }
 .company .h2__title {
@@ -127,6 +129,7 @@
   font-weight: 900;
 }
 .company .description {
+  z-index: 50;
   font-size: 18px;
   max-width: 880px;
   padding: 0 7% 10% 7%;

@@ -26,6 +26,30 @@
 .green {
   background: linear-gradient(to right, #33cc33, #99cc66);
 }
+.green__order {
+  background-color: #669933;
+  margin-left: -30px;
+  padding: 15px;
+  @media (max-width: 900px) {
+    margin: 0;
+  }
+}
+.red__order {
+  background-color: #ff3333;
+  margin-left: -30px;
+  padding: 15px;
+  @media (max-width: 900px) {
+    margin: 0;
+  }
+}
+.light-orange__order {
+  background-color: #cc9966;
+  margin-left: -30px;
+  padding: 15px;
+  @media (max-width: 900px) {
+    margin: 0;
+  }
+}
 .orange {
   background-color: #ff9933;
   @media (max-width: 900px) {

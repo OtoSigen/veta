@@ -13,7 +13,7 @@
     <title>Фотодитагель</title>
   </head>
   <body>
-    @@include("_header.html")@@include('modal.html')
+    @@include("_header.html")@@include('_mobile-menu.html')
     <section class="header__block-item">
       <img
         class="back__left"
@@ -52,7 +52,6 @@
         </div>
       </div>
     </section>
-    <!--    <p class="info__slogan">Всё лучшее для вас</p>-->
     <section class="about-item">
       <div class="item__product">
         <h2 class="h2__title">О продукте</h2>
@@ -187,7 +186,59 @@
         <button class="button border_red">Купить на ozon</button>
       </div>
     </section>
-    @@include('_footer.html')
+    <div class="main__footer">
+      <picture class="footer__picture">
+        <source
+          srcset="img/normoprotein-footer.png"
+          media="(min-width: 1366px)"
+        />
+        <source
+          srcset="img/normoprotein-footer-small.png"
+          media="(max-width: 768px)"
+        />
+        <img src="img/normoprotein-footer-middle.png" alt="MDN" />
+      </picture>
+      <form class="form">
+        <p class="form__slogan">Всё лучшее для вас</p>
+        <h2 class="h2__title">Оставьте заявку прямо сейчас!</h2>
+        <p class="p__description">
+          Вторым компонентом ФДТ является низкоэнергетическое световое
+          излучение, длина волны которого соответствует пику поглощения данного
+          фотосенсибилизатора.
+        </p>
+        <div class="form__input">
+          <input
+            class="input"
+            type="text"
+            placeholder="Ваш номер телефона или e-mail"
+          />
+          <button class="button red__order popup-open">
+            Оставить заявку
+          </button>
+        </div>
+      </form>
+      <footer class="footer footer__back_none">
+        <nav class="footer__nav">
+          <a href="saumal.html" class="footer__nav_item">Саумал</a>
+          <a href="fotoditazin.html" class="footer__nav_item">Фотодитазин</a>
+          <a href="normoprotein.html" class="footer__nav_item">Нормопротеин</a>
+          <a
+            href="index.html"
+            class="footer__nav_item-logo footer__nav_item-logo-gray"
+          ></a>
+          <a href="fotoditagel.html" class="footer__nav_item">Фотодитагель</a>
+          <a href="contacts.html" class="footer__nav_item">Контакты</a>
+          <div class="footer__social">
+            <a href="#" class="footer__nav_inst footer__nav_inst-gray"></a>
+            <a
+              href="#"
+              class="footer__nav_telegram footer__nav_telegram-gray"
+            ></a>
+          </div>
+        </nav>
+      </footer>
+    </div>
+    @@include('_modal.html')
     <script src="./js/script.min.js"></script>
   </body>
 </html>

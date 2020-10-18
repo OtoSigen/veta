@@ -22,20 +22,21 @@
     height: auto;
     position: absolute;
     right: 0;
+    z-index: 0;
     @media (max-width: 1366px) {
       width: 500px;
     }
     @media (max-width: 1024px) {
       width: 350px;
-      top: 40%;
+      top: 18%;
     }
     @media (max-width: 768px) {
       width: 310px;
-      top: 50%;
+      top: 33%;
     }
     @media (max-width: 480px) {
       width: 270px;
-      top: 70%;
+      top: 45%;
     }
   }
   .index__info {
@@ -76,8 +77,8 @@
     }
   }
 }
-
 .company {
+  z-index: 50;
   max-width: 100%;
   text-align: center;
   margin: auto;
@@ -91,13 +92,14 @@
     margin-top: 100px;
   }
   @media (max-width: 480px) {
-    margin-top: 160px;
+    margin-top: 220px;
   }
   .h2__title {
     font-size: 44px;
     font-weight: 900;
   }
   .description {
+    z-index: 50;
     font-size: 18px;
     max-width: 880px;
     padding: 0 7% 10% 7%;
