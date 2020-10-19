@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 20%;
+  margin-top: 2%;
   position: absolute;
 }
 .main__footer .form {
@@ -85,6 +85,10 @@
   .main__footer .form .form__input .orange {
     margin: 0;
   }
+}
+
+.main__footer_margin {
+  margin-top: 13%;
 }
 
 .footer__picture {

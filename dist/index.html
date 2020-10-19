@@ -60,6 +60,7 @@
       </div>
     </section>
     <section class="company">
+      <img class="company__img" src="./img/main-green.png" alt="img" />
       <h2 class="h2__title">О компании</h2>
       <p class="description">
         Вторым компонентом ФДТ является низкоэнергетическое световое излучение,
@@ -69,6 +70,7 @@
         излучения в тканях организма развивается фотохимическая реакция.
       </p>
       <div class="product">
+        <img class="product__back" src="./img/main-light-green.png" alt="img" />
         <h2 class="h2__title">Наши продукты</h2>
         <div class="product__wrap">
           <div class="product__content">
@@ -78,7 +80,7 @@
               Белки кобыльего молока легко усваиваются. В нем содержатся около
               40 биологических компонентов, необходимых человеческому организму
             </p>
-            <button class="button gray">Подробнее</button>
+            <a href="saumal.html" class="button gray">Подробнее</a>
           </div>
 
           <div class="product__content">
@@ -88,7 +90,9 @@
               Белки кобыльего молока легко усваиваются. В нем содержатся около
               40 биологических компонентов, необходимых человеческому организму
             </p>
-            <button class="button gray">Подробнее</button>
+            <a href="fotoditazin.html" class="button gray">
+              Подробнее
+            </a>
           </div>
 
           <div class="product__content">
@@ -98,7 +102,7 @@
               Белки кобыльего молока легко усваиваются. В нем содержатся около
               40 биологических компонентов, необходимых человеческому организму
             </p>
-            <button class="button gray">Подробнее</button>
+            <a href="normoprotein.html" class="button gray">Подробнее</a>
           </div>
 
           <div class="product__content">
@@ -112,7 +116,7 @@
               Белки кобыльего молока легко усваиваются. В нем содержатся около
               40 биологических компонентов, необходимых человеческому организму
             </p>
-            <button class="button gray">Подробнее</button>
+            <a href="fotoditagel.html" class="button gray">Подробнее</a>
           </div>
 
           <div class="product__content">
@@ -126,7 +130,7 @@
               Белки кобыльего молока легко усваиваются. В нем содержатся около
               40 биологических компонентов, необходимых человеческому организму
             </p>
-            <button class="button gray">Подробнее</button>
+            <a href="fotoditazin-gel.html" class="button gray">Подробнее</a>
           </div>
         </div>
       </div>
@@ -188,18 +192,22 @@
       <form class="popup__form">
         <div class="form__content">
           <input
-            class="form__input form__input_width"
+            class="form__input-modal form__input_width"
             type="text"
             placeholder="Имя *"
           />
           <input
-            class="form__input form__input_width"
+            class="form__input-modal form__input_width"
             type="text"
             placeholder="Телефон *"
           />
         </div>
-        <input class="form__input" type="text" placeholder="E-mail *" />
-        <input class="form__input" type="text" placeholder="Комментарий" />
+        <input class="form__input-modal" type="text" placeholder="E-mail *" />
+        <input
+          class="form__input-modal"
+          type="text"
+          placeholder="Комментарий"
+        />
         <div class="form__checkbox">
           <input class="custom__checkbox" id="checkbox" type="checkbox" />
           <label for="checkbox"

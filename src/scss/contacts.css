@@ -117,6 +117,9 @@
   height: auto;
   font-size: 16px;
   font-weight: 600;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 @media (max-width: 480px) {
   .contacts .contacts__info .contacts__data .data__item {

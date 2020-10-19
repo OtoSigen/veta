@@ -239,7 +239,7 @@
         <button class="button border_red">Купить на ozon</button>
       </div>
     </section>
-    <div class="main__footer">
+    <div class="main__footer main__footer_margin">
       <picture class="footer__picture footer__picture_margin">
         <source
           srcset="img/fotoditazin-footer.png"
@@ -265,7 +265,7 @@
             type="text"
             placeholder="Ваш номер телефона или e-mail"
           />
-          <button class="button green__order popup-open">
+          <button type="button" class="button green__order popup-open">
             Оставить заявку
           </button>
         </div>
@@ -304,18 +304,22 @@
       <form class="popup__form">
         <div class="form__content">
           <input
-            class="form__input form__input_width"
+            class="form__input-modal form__input_width"
             type="text"
             placeholder="Имя *"
           />
           <input
-            class="form__input form__input_width"
+            class="form__input-modal form__input_width"
             type="text"
             placeholder="Телефон *"
           />
         </div>
-        <input class="form__input" type="text" placeholder="E-mail *" />
-        <input class="form__input" type="text" placeholder="Комментарий" />
+        <input class="form__input-modal" type="text" placeholder="E-mail *" />
+        <input
+          class="form__input-modal"
+          type="text"
+          placeholder="Комментарий"
+        />
         <div class="form__checkbox">
           <input class="custom__checkbox" id="checkbox" type="checkbox" />
           <label for="checkbox"

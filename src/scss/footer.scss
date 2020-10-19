@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 20%;
+  margin-top: 2%;
   position: absolute;
   .form {
     z-index: 10;
@@ -74,7 +74,9 @@
     }
   }
 }
-
+.main__footer_margin {
+  margin-top: 13%;
+}
 .footer__picture {
   display: block;
   position: absolute;

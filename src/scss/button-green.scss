@@ -60,6 +60,10 @@
   }
 }
 .gray {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background-color: #f1f6ec;
   color: #53bf60;
   &:hover {

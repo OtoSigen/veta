@@ -113,7 +113,7 @@
   display: flex;
 }
 
-.form__input {
+.form__input-modal {
   font-weight: 500;
   font-size: 16px;
   z-index: 10;
@@ -124,7 +124,7 @@
   margin-bottom: 2%;
   background-color: transparent;
 }
-.form__input:focus {
+.form__input-modal:focus {
   border-bottom: 2px solid #33cc33;
 }
 
