@@ -161,7 +161,7 @@
             type="text"
             placeholder="Ваш номер телефона или e-mail"
           />
-          <button class="button orange popup-open">Оставить заявку</button>
+          <button type="button" class="button orange popup-open">Оставить заявку</button>
         </div>
       </form>
       <footer class="footer footer__back_none">
@@ -197,9 +197,9 @@
             placeholder="Имя *"
           />
           <input
-            class="form__input-modal form__input_width"
-            type="text"
+            class="form__input-modal form__input_width"            
             placeholder="Телефон *"
+            name="form_text_9"
           />
         </div>
         <input class="form__input-modal" type="text" placeholder="E-mail *" />
@@ -209,18 +209,40 @@
           placeholder="Комментарий"
         />
         <div class="form__checkbox">
-          <input class="custom__checkbox" id="checkbox" type="checkbox" />
-          <label for="checkbox"
+          <input class="custom__checkbox" id="checkbox" type="checkbox" checked/>
+          <label for="checkbox" 
             >Я согласен (на) с обработкой Персональных данных</label
           >
         </div>
-        <button class="button green popup__btn-post">Оставить заявку</button>
+        <button type="button" class="button green popup__btn-post">Оставить заявку</button>
       </form>
       <img class="popup__img" src="img/popup-back.png" alt="img" />
     </div>
   </div>
 </section>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script>
+  $(document).ready(function($){
+    $("input[name='form_text_9']").mask('+7 (000) 000 0000', {placeholder: "+7 (___) ___ ____"})
+  })
+</script><section class="container">
+    <div class="fixed_overlay hide" id="popup-post">
+      <div class="popup popup-post_width">
+        <img
+          class="popup__close-btn"
+          id="popup__close-btn-post"
+          src="./img/close-btn.png"
+          alt="img"
+        />
+        <h2 class="popup__title">Заявка успешно отправлена</h2>
+        <p class="popup_description">Наш менеджер свяжется с Вами в течение нескольких часов</p>
+        </form>
+        <!-- <img class="popup__img" src="img/popup-back.png" alt="img" /> -->
+      </div>
+    </div>
+  </section>
+  
     <script src="./js/script.min.js"></script>
   </body>
 </html>
