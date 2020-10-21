@@ -1041,6 +1041,10 @@
   padding: 0 10% 0 10%;
 }
 
+.buy-item_margin-bottom {
+  margin-bottom: 130px;
+}
+
 .info__slogan {
   z-index: 10;
   color: #ff3333;
@@ -1441,6 +1445,10 @@ body {
     height: auto;
   }
 
+  .buy-item_margin-bottom {
+    margin-bottom: 0;
+  }
+
   .info__slogan {
     font-size: 12px;
     margin: 0 0 15px 0;
@@ -1570,6 +1578,12 @@ body {
   }
 }
 
+@media (max-width: 900px) and (max-width: 574px) {
+  .orange {
+    width: 280px;
+  }
+}
+
 @media (max-width: 900px) {
   .main__footer .form .form__input {
     -webkit-box-orient: vertical;
@@ -1603,12 +1617,6 @@ body {
 
   .orange {
     height: 54px;
-  }
-}
-
-@media (max-width: 900px) and (max-width: 574px) {
-  .orange {
-    width: 280px;
   }
 }
 
@@ -1784,6 +1792,13 @@ body {
     max-width: 250px;
     margin-right: 5%;
     min-height: 300px;
+  }
+
+  .header__block-item .item__wrap .item_wrap_image-width {
+    max-width: 350px;
+    margin-bottom: 15%;
+    margin-right: 0;
+    min-height: 100%;
   }
 
   .about-item {
@@ -2050,6 +2065,17 @@ body {
   }
 }
 
+@media (max-width: 452px) {
+  .header__block-item .item__wrap .item_wrap_image-width {
+    margin-bottom: 25%;
+  }
+
+  .header__block-item .item__wrap .item__wrap_info {
+    margin-left: -10px;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 451px) {
   .header__block-item .item__wrap .item__wrap_info .info__advantage {
     display: none;
@@ -2100,8 +2126,8 @@ body {
     width: 200px;
   }
 
-  .header__block-item .item__wrap .item__wrap_info {
-    margin-left: -10px;
+  .header__block-item .item__wrap .item_wrap_image-width {
+    margin-bottom: 39%;
   }
 
   .header__block-item .item__wrap .item__wrap_info .info__slogan {
@@ -2183,7 +2209,7 @@ body {
 
 }
 
- @media (max-width: 900px){
+ @media (max-width: 900px) and (max-width: 574px){
 
 @supports (-webkit-appearance:none){
 
@@ -2191,7 +2217,7 @@ body {
 
 }
 
- @media (max-width: 900px) and (max-width: 574px){
+ @media (max-width: 900px){
 
 @supports (-webkit-appearance:none){
 
@@ -2280,6 +2306,14 @@ body {
 }
 
  @media (max-width: 480px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 452px){
 
 @supports (-webkit-appearance:none){
 
