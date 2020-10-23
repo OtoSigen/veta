@@ -8,32 +8,38 @@
         alt="img"
       />
       <h2 class="popup__title">Оставить заявку</h2>
-      <form class="popup__form">
+      <form class="popup__form" id="validate-form">
         <div class="form__content">
+          <div class="content__wrap">
           <input
-            class="form__input-modal form__input_width"
+            class="form__input-modal form__input_width field _req"
             type="text"
             placeholder="Имя *"
-          />
-          <input
-            class="form__input-modal form__input_width"            
-            placeholder="Телефон *"
-            name="form_text_9"
+            id="popup-name-form"
           />
         </div>
-        <input class="form__input-modal" type="text" placeholder="E-mail *" />
+        <div class="content__wrap">
+          <input
+            class="form__input-modal form__input_width field _req"            
+            placeholder="Телефон *"
+            name="form_phone-number"
+            id="popup-phone-form"
+          />
+        </div>
+        </div>
+        <div class="content__wrap"><input class="form__input-modal field _req email" type="text" placeholder="E-mail *" id="popup-email-form"/></div>
         <input
           class="form__input-modal"
           type="text"
           placeholder="Комментарий"
         />
         <div class="form__checkbox">
-          <input class="custom__checkbox" id="checkbox" type="checkbox" checked/>
+          <input class="custom__checkbox _req" id="checkbox" type="checkbox" checked/>
           <label for="checkbox" 
             >Я согласен (на) с обработкой Персональных данных</label
           >
         </div>
-        <button type="button" class="button green popup__btn-post">Оставить заявку</button>
+        <button type="submit" class="button green popup__btn-post" disabled>Оставить заявку</button>
       </form>
       <img class="popup__img" src="img/popup-back.png" alt="img" />
     </div>
@@ -43,6 +49,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script>
   $(document).ready(function($){
-    $("input[name='form_text_9']").mask('+7 (000) 000 0000', {placeholder: "+7 (___) ___ ____"})
+    $("input[name='form_phone-number']").mask('+7 (000) 000 0000', {placeholder: "+7 (___) ___ ____"})
   })
 </script>

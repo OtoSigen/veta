@@ -1191,6 +1191,7 @@
 }
 
 .container .fixed_overlay .popup .popup__form {
+  position: relative;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1220,7 +1221,7 @@
 }
 
 .container .fixed_overlay .popup .popup__form .form__content .form__input_width {
-  width: 49%;
+  width: 98%;
 }
 
 .container .fixed_overlay .popup .popup__form .form__checkbox {
@@ -1295,6 +1296,7 @@
 }
 
 .form__input-modal {
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   z-index: 10;
@@ -1330,6 +1332,14 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.content__wrap {
+  width: 100%;
 }
 
 .mobile-menu {
