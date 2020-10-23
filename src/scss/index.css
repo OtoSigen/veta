@@ -65,7 +65,7 @@
   .index .index__info {
     left: 0;
     top: 7%;
-    padding: 0 7% 0 7%;
+    padding: 0 2% 0 7%;
     margin-left: 10px;
   }
 }
@@ -168,11 +168,17 @@
 }
 .product .product__wrap {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: row wrap;
   padding: 0 5% 0 5%;
-  margin-bottom: 5%;
   z-index: 100;
+  max-width: 1341px;
+  margin: 0 auto 5% auto;
+}
+@media (max-width: 1450px) {
+  .product .product__wrap {
+    justify-content: center;
+  }
 }
 .product .product__wrap .product__content {
   box-sizing: border-box;
