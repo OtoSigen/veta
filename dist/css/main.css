@@ -175,9 +175,9 @@
 }
 
 .footer__picture_margin img {
-  min-height: 605px;
+  min-height: 785px;
   height: 704px;
-  margin-top: 300px;
+  margin-top: 174px;
 }
 
 .footer {
@@ -1334,12 +1334,30 @@
   text-align: center;
 }
 
+.input__error {
+  color: red;
+  position: relative;
+  top: -10px;
+}
+
 .error {
-  border: 2px solid red;
+  color: red;
+}
+
+.error-border {
+  border-bottom: 2px solid red;
+}
+
+.success-border {
+  border-bottom: 2px solid #33cc33;
 }
 
 .content__wrap {
   width: 100%;
+}
+
+.disabled {
+  background-color: lightgray;
 }
 
 .mobile-menu {
@@ -1392,6 +1410,14 @@ body {
   padding: 0;
   font-family: "Raleway", sans-serif;
   width: 100%;
+}
+
+@media (min-width: 1365px) {
+  .header__block-item .item__wrap .item_wrap_image-width {
+    height: 60%;
+    margin-right: 10%;
+    max-width: 550px;
+  }
 }
 
 @media (max-width: 1584px) {
@@ -1986,6 +2012,11 @@ body {
 }
 
 @media (max-width: 560px) {
+  .footer__picture_margin img {
+    height: 1043px;
+    margin-top: 324px;
+  }
+
   .company {
     margin-top: 100px;
   }
@@ -2170,7 +2201,7 @@ body {
   }
 
   .footer__picture_margin img {
-    height: 951px;
+    height: 1043px;
     margin-top: 372px;
   }
 }
@@ -2202,6 +2233,15 @@ body {
     margin-bottom: 5px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 860px) {
+  .header__block-item .item__wrap .item_wrap_image-width {
+    max-width: 300px;
+    margin-bottom: 15%;
+    margin-right: 3%;
+    min-height: 100%;
+  }
+}
 @supports (-webkit-appearance:none){
 .header .header__burger{background:url("../img/burger-icon.webp")}
 .footer .footer__nav .footer__nav_item-logo{background:url("../img/footer-logo.webp") no-repeat}
@@ -2211,6 +2251,14 @@ body {
 .footer .footer__nav .footer__social .footer__nav_telegram{background:url("../img/footer-telegram.webp") no-repeat}
 .footer .footer__nav .footer__social .footer__nav_telegram-gray{background:url("../img/footer-telegram-gray.webp") no-repeat}
 .container .fixed_overlay .popup .popup__form .form__checkbox .custom__checkbox:checked + label::before{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")}
+}
+
+ @media (min-width: 1365px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }
 
  @media (max-width: 1584px){
@@ -2430,6 +2478,14 @@ body {
 }
 
  @media (max-width: 320px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (min-width: 768px) and (max-width: 860px){
 
 @supports (-webkit-appearance:none){
 

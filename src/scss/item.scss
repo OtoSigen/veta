@@ -70,6 +70,17 @@
       }
     }
     .item_wrap_image-width {
+      @media (min-width: 1365px) {
+        height: 60%;
+        margin-right: 10%;
+        max-width: 550px;
+      }
+      @media (min-width: 768px) and (max-width: 860px) {
+        max-width: 300px;
+        margin-bottom: 15%;
+        margin-right: 3%;
+        min-height: 100%;
+      }
       @media (max-width: 768px) {
         max-width: 350px;
         margin-bottom: 15%;

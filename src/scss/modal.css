@@ -101,6 +101,7 @@
   position: relative;
 }
 .container .fixed_overlay .popup .popup__form {
+  position: relative;
   z-index: 10;
   display: flex;
   flex-flow: column nowrap;
@@ -119,7 +120,7 @@
   }
 }
 .container .fixed_overlay .popup .popup__form .form__content .form__input_width {
-  width: 49%;
+  width: 98%;
 }
 @media (max-width: 768px) {
   .container .fixed_overlay .popup .popup__form .form__content .form__input_width {
@@ -181,6 +182,7 @@
 }
 
 .form__input-modal {
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   z-index: 10;
@@ -208,6 +210,32 @@
   flex-flow: column;
   align-items: center;
   text-align: center;
+}
+
+.input__error {
+  color: red;
+  position: relative;
+  top: -10px;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 2px solid red;
+}
+
+.success-border {
+  border-bottom: 2px solid #33cc33;
+}
+
+.content__wrap {
+  width: 100%;
+}
+
+.disabled {
+  background-color: lightgray;
 }
 
 /*# sourceMappingURL=modal.css.map */

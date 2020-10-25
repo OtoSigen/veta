@@ -100,9 +100,9 @@
 
 .footer__picture_margin {
   img {
-    min-height: 605px;
+    min-height: 785px;
     height: 704px;
-    margin-top: 300px;
+    margin-top: 174px;
     @media (max-width: 1366px) {
       height: 730px;
       margin-top: 341px;
@@ -114,8 +114,12 @@
       height: 957px;
       margin-top: 324px;
     }
+    @media (max-width: 560px) {
+      height: 1043px;
+      margin-top: 324px;
+    }
     @media (max-width: 402px) {
-      height: 951px;
+      height: 1043px;
       margin-top: 372px;
     }
   }

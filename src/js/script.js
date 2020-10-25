@@ -20,8 +20,6 @@ const popupOpen = () => {
   const popupCloseBtn = document.querySelector("#popup__close-btn");
   const popupOpenBtn = document.querySelectorAll(".popup-open");
 
-  
-
   popupOpenBtn.forEach(function (item) {
     item.addEventListener("click", function () {
       popup.classList.add("show");
@@ -33,7 +31,11 @@ const popupOpen = () => {
     popup.classList.add("hide");
     popup.classList.remove("show");
   });
+};
+popupOpen();
 
+const popupPost = () => {
+  const popup = document.querySelector("#popup");
   const popupPost = document.querySelector("#popup-post");
   const popupCloseBtnPost = document.querySelector("#popup__close-btn-post");
   const popupPostOpenBtn = document.querySelectorAll(".popup__btn-post");
@@ -52,7 +54,6 @@ const popupOpen = () => {
     popupPost.classList.remove("show");
   });
 };
-popupOpen();
 
 const burgerOpen = () => {
   const burger = document.querySelector("#burger-menu");
@@ -72,92 +73,132 @@ const burgerOpen = () => {
 burgerOpen();
 
 // formValidate = () => {
-//   const form = document.querySelector('#validate-form')
-//   const nameValue = document.querySelector('#popup-name-form')
-//   const phoneValue = document.querySelector('#popup-phone-form')
-//   const emailValue = document.querySelector('#popup-email-form')
-//   const fields = document.querySelectorAll('.field')
-//   const btn = document.querySelector('#popup__btn-post')
-
-
-//   form.addEventListener('submit', function (event) {
-//     event.preventDefault()
-
-//     let errors = form.querySelectorAll('.error')
-
-//     for (var i = 0; i < errors.length; i++) {
-//       errors[i].remove()
+//   const form = document.querySelector("#validate-form");
+//   const name = document.querySelector("#popup-name-form");
+//   const phone = document.querySelector("#popup-phone-form");
+//   const email = document.querySelector("#popup-email-form");
+//   const btn = document.querySelector("#popup__btn-post");
+//
+//   form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//
+//     checkInputs();
+//     // popupPost();
+//   });
+//
+//   function checkInputs() {
+//     const nameValue = name.value.trim();
+//     const emailValue = email.value.trim();
+//     const phoneValue = phone.value.trim();
+//
+//     if (nameValue === "") {
+//       setErrorFor(name, "Введите ваше имя");
+//     } else {
+//       setSuccessFor(name);
 //     }
-
-//     fields.forEach((item) => {
-//       if(!item.value){
-//         let error = document.createElement('div')
-//         error.className='error'
-//         error.classList.add = 'error'
-//         error.innerHTML = 'Поле не может быть пустым'
-//         item.parentElement.insertBefore(error, item)
-//       }
-//     })
-
-//     if(nameValue.length || emailValue.length || phoneValue.length <0){
-//       btn.setAttribute("disabled", "disabled");
+//     if (phoneValue === "") {
+//       setErrorFor(phone, "Введите номер телефона");
+//     } else {
+//       setSuccessFor(phone);
 //     }
-    
-//   })
-  
-// }
-// formValidate()
+//     if (emailValue === "") {
+//       setErrorFor(email, "Введите email");
+//     } else if (!isEmail(emailValue)) {
+//       setErrorFor(email, "Проверьте email");
+//     } else {
+//       setSuccessFor(email);
+//     }
+//   }
+//   const setErrorFor = (input, message) => {
+//     const formControl = input.parentElement;
+//     const small = formControl.querySelector("small");
+//     const inputField = document.querySelectorAll(
+//       ".content__wrap .form__input-modal"
+//     );
+//
+//     small.innerText = message;
+//
+//     formControl.classList.add("error");
+//     inputField.forEach((item) => {
+//       item.style.borderBottom = "2px solid red";
+//     });
+//   };
+//   const setSuccessFor = (input) => {
+//     const formControl = input.parentElement;
+//     const small = formControl.querySelector("small");
+//     const inputField = document.querySelectorAll(
+//       ".content__wrap .form__input-modal"
+//     );
+//
+//     formControl.classList.remove("error");
+//     inputField.forEach((item) => {
+//       item.style.borderBottom = "2px solid #33cc33";
+//     });
+//     small.style.display = "none";
+//   };
+//   function isEmail(email) {
+//     return /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/.test(
+//       email
+//     );
+//   }
+// };
+// formValidate();
 
-Validate = () => {
-  const form = document.querySelector('#validate-form')
-  form.addEventListener('submit', formSend)
+formSubmit = () => {
+  const form = document.querySelector("#validate-form");
+  const phone = document.querySelector("#popup-phone-form");
+  const name = document.querySelector("#popup-name-form");
+  const email = document.querySelector("#popup-email-form");
 
-  async function formSend(e){
-    e.preventDefault();
- 
+  const regExpEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
 
-  let error = formValidate(form)
-
-}
-
-function formValidate (form){
-  let error = 0;
-  let formReq = document.querySelectorAll('._req')
-  
-  for (let index = 0; index < formReq.length; index++){
-    const input = formReq[index];
-    formRemoveError(input);
-  
-  if(input.classList.contains('email')){
-    if(emailTest(input)){
-      formAddError(input)
-      error++
-    }
-    else if(input.getAttribute('type') === 'checkbox' && input.checked === false){
-      formAddError(input)
-      error++
-    }
-    else {
-      if(input.value === ''){
-        formAddError(input)
-        error++
+  const validateElem = (elem) => {
+    if (elem === name) {
+      if (elem.value.length < 3) {
+        elem.nextElementSibling.textContent = "Введите своё имя";
+      } else {
+        elem.nextElementSibling.textContent = "";
       }
     }
-   }
+    if (elem === phone) {
+      if (elem.value.length === 0) {
+        elem.nextElementSibling.textContent = "Введите номер телефона";
+      } else {
+        elem.nextElementSibling.textContent = "";
+      }
+    }
+    if (elem === email) {
+      if (!regExpEmail.test(elem.value)) {
+        elem.nextElementSibling.textContent = "Введите корректный email";
+      } else {
+        elem.nextElementSibling.textContent = "";
+      }
+    }
+  };
+
+  for (let elem of form.elements) {
+    if (elem.classList.contains("form__input-modal" && "field")) {
+      elem.addEventListener("blur", () => {
+        validateElem(elem);
+      });
+    }
   }
-}
 
-function formAddError(input)  {
-  input.parentElement.classList.add('error');
-  input.classList.add('error');
-}
-function formRemoveError(input)  {
-  input.parentElement.classList.remove('error');
-  input.classList.remove('error');
-}
-// function emailTest(input){
-//   return
-// }
-}
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-Validate()
+    for (let elem of form.elements) {
+      if (elem.classList.contains("form__input-modal" && "field")) {
+        if (elem.value === "") {
+          elem.nextElementSibling.textContent = "Данное поле не заполнено";
+        } else {
+          elem.nextElementSibling.textContent = "";
+        }
+      }
+      if (elem.value) {
+        popupPost();
+      }
+    }
+  });
+};
+formSubmit();

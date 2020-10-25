@@ -268,35 +268,55 @@
       <form class="popup__form" id="validate-form">
         <div class="form__content">
           <div class="content__wrap">
-          <input
-            class="form__input-modal form__input_width field _req"
-            type="text"
-            placeholder="Имя *"
-            id="popup-name-form"
-          />
+            <input
+              class="form__input-modal form__input_width field"
+              type="text"
+              placeholder="Имя *"
+              id="popup-name-form"
+              name="name"
+            />
+            <small class="input__error"></small>
+          </div>
+          <div class="content__wrap">
+            <input
+              class="form__input-modal form__input_width field"
+              placeholder="Телефон *"
+              name="form_phone-number"
+              id="popup-phone-form"
+              name="phone"
+            />
+            <small class="input__error"></small>
+          </div>
         </div>
         <div class="content__wrap">
           <input
-            class="form__input-modal form__input_width field _req"            
-            placeholder="Телефон *"
-            name="form_phone-number"
-            id="popup-phone-form"
+            class="form__input-modal field email"
+            type="text"
+            placeholder="E-mail *"
+            id="popup-email-form"
+            name="email"
           />
+          <small class="input__error"></small>
         </div>
-        </div>
-        <div class="content__wrap"><input class="form__input-modal field _req email" type="text" placeholder="E-mail *" id="popup-email-form"/></div>
         <input
           class="form__input-modal"
           type="text"
           placeholder="Комментарий"
         />
         <div class="form__checkbox">
-          <input class="custom__checkbox _req" id="checkbox" type="checkbox" checked/>
-          <label for="checkbox" 
+          <input
+            class="custom__checkbox"
+            id="checkbox"
+            type="checkbox"
+            checked
+          />
+          <label for="checkbox"
             >Я согласен (на) с обработкой Персональных данных</label
           >
         </div>
-        <button type="submit" class="button green popup__btn-post" disabled>Оставить заявку</button>
+        <button type="submit" class="button popup__btn-post green">
+          Оставить заявку
+        </button>
       </form>
       <img class="popup__img" src="img/popup-back.png" alt="img" />
     </div>
@@ -305,10 +325,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 <script>
-  $(document).ready(function($){
-    $("input[name='form_phone-number']").mask('+7 (000) 000 0000', {placeholder: "+7 (___) ___ ____"})
-  })
-</script><section class="container">
+  $(document).ready(function ($) {
+    $("input[name='form_phone-number']").mask("+7 (000) 000 0000", {
+      placeholder: "+7 (___) ___ ____",
+    });
+  });
+</script>
+<section class="container">
   <div class="fixed_overlay hide" id="popup-post">
     <div class="popup popup-post_width">
       <img
