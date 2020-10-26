@@ -195,8 +195,10 @@ formSubmit = () => {
           elem.nextElementSibling.textContent = "";
         }
       }
-      if (elem.value) {
-        popupPost();
+      if (elem === email && elem.value !== "") {
+        if (regExpEmail.test(elem.value)) {
+          popupPost();
+        }
       }
     }
   });
