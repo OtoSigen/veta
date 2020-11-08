@@ -24,7 +24,11 @@
       </picture>
 
       <div class="index__info">
-        <h1 class="index__info-title">Препараты, которые работают</h1>
+        <p class="info__slogan info__slogan_green">Всё лучшее для вас</p>
+        <h1 class="index__info-title">
+          Препараты,<br />
+          которые работают
+        </h1>
         <p class="index__info-description">
           Одним компонентом является вещество, взаимодействующее со светом волны
           и обладающее способностью накаливаться.
@@ -34,6 +38,7 @@
     </section>
     <section class="company">
       <img class="company__img" src="./img/main-green.png" alt="img" />
+      <p class="info__slogan info__slogan_green">Всё лучшее для вас</p>
       <h2 class="h2__title">О компании</h2>
       <p class="description">
         Вторым компонентом ФДТ является низкоэнергетическое световое излучение,
@@ -44,6 +49,7 @@
       </p>
       <div class="product">
         <img class="product__back" src="./img/main-light-green.png" alt="img" />
+        <p class="info__slogan info__slogan_green">Всё лучшее для вас</p>
         <h2 class="h2__title">Наши продукты</h2>
         <div class="product__wrap">
           <div class="product__content">
@@ -108,19 +114,19 @@
         </div>
       </div>
     </section>
-    <div class="main__footer">
-      <picture class="footer__picture">
-        <source
-          srcset="img/main-green-footer.png"
-          media="(min-width: 1366px)"
-        />
-        <source
-          srcset="img/main-green-footer-small.png"
-          media="(max-width: 768px)"
-        />
-        <img src="img/main-green-footer-middle.png" alt="MDN" />
-      </picture>
-      <form class="form">
+    <div class="main__footer main__footer_index">
+      <!--      <picture class="footer__picture">-->
+      <!--        <source-->
+      <!--          srcset="img/main-green-footer.png"-->
+      <!--          media="(min-width: 1366px)"-->
+      <!--        />-->
+      <!--        <source-->
+      <!--          srcset="img/main-green-footer-small.png"-->
+      <!--          media="(max-width: 768px)"-->
+      <!--        />-->
+      <!--        <img src="img/main-green-footer-middle.png" alt="MDN" />-->
+      <!--      </picture>-->
+      <form class="form form_margin-top">
         <p class="form__slogan">Всё лучшее для вас</p>
         <h2 class="h2__title">Оставьте заявку прямо сейчас!</h2>
         <p class="p__description">
@@ -134,7 +140,9 @@
             type="text"
             placeholder="Ваш номер телефона или e-mail"
           />
-          <button type="button" class="button orange popup-open">Оставить заявку</button>
+          <button type="button" class="button orange popup-open">
+            Оставить заявку
+          </button>
         </div>
       </form>
       <footer class="footer footer__back_none">

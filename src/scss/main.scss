@@ -1,3 +1,11 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+}
+
 @import "header.scss";
 @import "footer.scss";
 @import "down-menu-contacts.scss";
@@ -7,11 +15,3 @@
 @import "item.scss";
 @import "modal.scss";
 @import "mobile-menu.scss";
-
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-}
